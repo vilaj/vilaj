@@ -4,7 +4,7 @@ FROM python:3.9-slim-buster
 WORKDIR /app
 
 # Install dependencies
-RUN pip install -r Flask==2.0.1
+# RUN pip install -r Flask==2.0.1
 
 # Set environment variables
 ENV FLASK_APP=app.py
