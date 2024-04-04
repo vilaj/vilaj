@@ -1,2 +1,18 @@
 FROM python:3.9-slim-buster
 
+# Set the working directory
+WORKDIR /app
+
+# Install dependencies
+# RUN pip install -r Flask==2.0.1
+
+# Set environment variables
+ENV FLASK_APP=app.py
+ENV FLASK_ENV=development
+
+# Expose the port
+EXPOSE 5000
+
+# Start the application
+CMD ["flask", "run", "--host=0.0.0.0"]
+
