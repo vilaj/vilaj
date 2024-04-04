@@ -5,7 +5,7 @@ services:
     build:
         context: https://github.com/vilaj/vilaj.git
         dockerfile: docker/dockerfile_python_flask
-    image: python_flask:latest
+    image: python_flask
     volumes:
       - python_flask:/app
     ports:
