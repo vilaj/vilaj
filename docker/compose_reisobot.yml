@@ -24,8 +24,10 @@ services:
 volumes:
   nodered_reisobot:
     name: nodered_reisobot
+    external: true
   python_flask:
     name: python_flask
+    external: true
 networks:
   bridge:
     driver: bridge
