@@ -9,8 +9,7 @@ services:
     volumes:
       - python_flask:/app
     restart: unless-stopped
-    networks:
-      - bridge
+    network_mode: bridge
   nodered_reisobot:
     container_name: nodered_reisobot
     image: nodered/node-red:latest-18
@@ -19,8 +18,7 @@ services:
     ports:
       - "31880:1880"
     restart: unless-stopped
-    networks:
-      - bridge
+    network_mode: bridge
 volumes:
   nodered_reisobot:
     name: nodered_reisobot
@@ -28,7 +26,3 @@ volumes:
   python_flask:
     name: python_flask
     external: true
-networks:
-  bridge:
-    driver: bridge
-    name: bridge
