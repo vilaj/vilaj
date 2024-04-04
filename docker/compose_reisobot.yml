@@ -8,8 +8,6 @@ services:
     image: python_flask
     volumes:
       - python_flask:/app
-    ports:
-      - "35000:5000"
     restart: unless-stopped
   nodered_reisobot:
     container_name: nodered_reisobot
