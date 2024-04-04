@@ -2,7 +2,9 @@ version: "3.9"
 
 services:
   python_flask:
-    build: dockerfile_python_flask
+    build:
+        context: https://github.com/vilaj/vilaj.git
+        dockerfile: dockerfile_python_flask
     volumes:
       - python_flask:/app
     ports:
