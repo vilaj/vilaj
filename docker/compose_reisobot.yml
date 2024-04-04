@@ -13,7 +13,6 @@ services:
   nodered_reisobot:
     container_name: nodered_reisobot
     image: nodered/node-red:latest-18
-    user: "1000:1000"
     volumes:
       - nodered_reisobot:/data
     ports:
