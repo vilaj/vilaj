@@ -12,7 +12,7 @@ services:
     restart: unless-stopped
 
   nodered_reisobot:
-    image: nodered/node-red:latest
+    image: nodered/node-red:latest-18
     volumes:
       - nodered_reisobot:/data
     ports:
