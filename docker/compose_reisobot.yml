@@ -23,7 +23,9 @@ services:
 
 volumes:
   nodered_reisobot:
+    name: nodered_reisobot
   python_flask:
+    name: python_flask
 
 networks:
   default:
