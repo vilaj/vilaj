@@ -1,5 +1,4 @@
 version: "3.9"
-
 services:
   python_flask:
     container_name: python_flask
@@ -11,7 +10,6 @@ services:
     ports:
       - "35000:5000"
     restart: unless-stopped
-
   nodered_reisobot:
     container_name: nodered_reisobot
     image: nodered/node-red:latest-18
@@ -20,14 +18,8 @@ services:
     ports:
       - "31880:1880"
     restart: unless-stopped
-
 volumes:
   nodered_reisobot:
     name: nodered_reisobot
   python_flask:
     name: python_flask
-
-networks:
-  default:
-    name: reisobot
-    driver: bridge
