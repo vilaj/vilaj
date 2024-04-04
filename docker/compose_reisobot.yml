@@ -2,6 +2,7 @@ version: "3.9"
 
 services:
   python_flask:
+    name: python_flask
     build:
         context: https://github.com/vilaj/vilaj.git
         dockerfile: docker/dockerfile_python_flask
@@ -12,6 +13,7 @@ services:
     restart: unless-stopped
 
   nodered_reisobot:
+    name: nodered_reisobot
     image: nodered/node-red:latest-18
     volumes:
       - nodered_reisobot:/data
